@@ -1,0 +1,17 @@
+{
+  "name": "openchain-hub",
+  "private": true,
+  "workspaces": [
+    "core-contracts",
+    "frontend-app",
+    "backend-api",
+    "plugins/*"
+  ],
+  "scripts": {
+    "contracts:compile": "npm --workspace core-contracts run compile",
+    "contracts:test": "npm --workspace core-contracts run test",
+    "frontend:dev": "npm --workspace frontend-app run dev",
+    "frontend:build": "npm --workspace frontend-app run build",
+    "backend:dev": "npm --workspace backend-api run dev"
+  }
+}
